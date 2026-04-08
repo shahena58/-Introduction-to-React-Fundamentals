@@ -7,11 +7,13 @@ const BioData = (props) =>{
         <div className="personal-info">
           <h2>Bio data of {props.name}</h2>
           <p>
-            <strong>email</strong> asiefmahirl@gmail.com
+            <strong>email</strong> {props.email}
           </p>
-          <p>
-            <strong>phone</strong> 01890455872
+          {props.phone && (
+            <p>
+            <strong>phone</strong> {props.phone}
           </p>
+          )}
         </div>
         <hr />
         <div className="skills">
