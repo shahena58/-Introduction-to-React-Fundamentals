@@ -1,11 +1,12 @@
 // import './App.css'
 import './app.css'
-import BioData from './components/BioData';
+import BioData from './components/BioData'
+
+
 function App() {
   return (
-
     <>
-    <div className="app">
+      <div className="app">
       <h2>personal information practice</h2>
 {/* Bio data of Ashif Mahir */}
       <div className="bio-data">
@@ -42,10 +43,27 @@ function App() {
       </div>
 
     </div>
- 
-  <BioData />
+
+   <BioData 
+    name = "shahena"
+    email = "asiefmahirl@mail.com"
+    phone = "0189045888"
+    skills = {["JS", "React", "redux",]}
+    interests = {["chess", "football", "cricket"]}
+   />
+   <BioData 
+    name = "rojina"
+    email = "asiefmahirl@mail.com"
+    phone = "0189045888"
+    skills = {["JS", "React", "redux", "Node", "Ts"]}
+    interests = {["chess", "football", "cricket"]}
+   />
     </>
   );
 }
 
 export default App;
+
+
+// {name: "Mahir Ashif", email: "asiefmahirl@gmail.com", phone: "+0189045155258", skill: ["JS", "react", "redux"], interests: ["Chess", "football"]}
+

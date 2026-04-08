@@ -1,42 +1,32 @@
 
-const BioData = () =>{
+const BioData = (props) =>{
 
     return(
         <>
-         {/* Bio data of SR SETU */}
-      <div className="bio-data">
+        <div className="bio-data">
         <div className="personal-info">
-          <h2>Bio data of  SR SETU</h2>
+          <h2>Bio data of {props.name}</h2>
           <p>
-            <strong>email</strong> srsetul@gmail.com
+            <strong>email</strong> asiefmahirl@gmail.com
           </p>
           <p>
-            <strong>phone</strong> 0189045585
+            <strong>phone</strong> 01890455872
           </p>
         </div>
         <hr />
         <div className="skills">
           <ul>
-            <li>Js</li>
-            <li>React</li>
-            <li>Node</li>
-            <li>MongoDB</li>
-            <li>typescript</li>
-            <li>WP</li>
-            <li>PHP</li>
-            <li>pithon</li>
-            <li>Zoomla</li>
+        { props.skills.map(skill =>(
+            <li key = {skill} >{skill}</li>
+        ))}
           </ul>
         </div>
 
         <div className="interest">
-          <ul>
-            <li>Chess</li>
-            <li>Football</li>
-            <li>Universe</li>
-            <li>space Researse</li>
-            <li>System Design</li>
-            <li>DSA</li>
+           <ul>
+        { props.interests.map(interest =>(
+            <li key = {interest} >{interest}</li>
+        ))}
           </ul>
         </div>
 
