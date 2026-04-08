@@ -1,21 +1,17 @@
-// import './App.css'
-import './app.css'
-import BioData from './components/BioData';
-function App() {
-  return (
 
-    <>
-    <div className="app">
-      <h2>personal information practice</h2>
-{/* Bio data of Ashif Mahir */}
+const BioData = () =>{
+
+    return(
+        <>
+         {/* Bio data of SR SETU */}
       <div className="bio-data">
         <div className="personal-info">
-          <h2>Bio data of Ashif Mahir</h2>
+          <h2>Bio data of  SR SETU</h2>
           <p>
-            <strong>email</strong> asiefmahirl@gmail.com
+            <strong>email</strong> srsetul@gmail.com
           </p>
           <p>
-            <strong>phone</strong> 01890455872
+            <strong>phone</strong> 0189045585
           </p>
         </div>
         <hr />
@@ -26,6 +22,10 @@ function App() {
             <li>Node</li>
             <li>MongoDB</li>
             <li>typescript</li>
+            <li>WP</li>
+            <li>PHP</li>
+            <li>pithon</li>
+            <li>Zoomla</li>
           </ul>
         </div>
 
@@ -33,19 +33,16 @@ function App() {
           <ul>
             <li>Chess</li>
             <li>Football</li>
-            <li>Cricket</li>
+            <li>Universe</li>
+            <li>space Researse</li>
             <li>System Design</li>
             <li>DSA</li>
           </ul>
         </div>
 
       </div>
-
-    </div>
- 
-  <BioData />
-    </>
-  );
+        </>
+    )
 }
 
-export default App;
+export default BioData
