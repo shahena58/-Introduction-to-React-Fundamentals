@@ -1,34 +1,41 @@
 
+
 const BioData = (props) =>{
+
+    const {name, email, phone, skills, interests} = props
 
     return(
         <>
-        <div className="bio-data">
+         <div className="bio-data">
+
         <div className="personal-info">
-          <h2>Bio data of {props.name}</h2>
+          <h2>Bio data of {name}</h2>
           <p>
-            <strong>email</strong> {props.email}
+            <strong>email:</strong> {email}
           </p>
-          {props.phone && (
-            <p>
-            <strong>phone</strong> {props.phone}
-          </p>
-          )}
+
+          {phone && (
+          <p>
+            <strong>phone:</strong> {phone}
+          </p> 
+          )}        
         </div>
-        <hr />
+
         <div className="skills">
           <ul>
-        { props.skills.map(skill =>(
-            <li key = {skill} >{skill}</li>
-        ))}
+            {
+                skills.map(skill =>(
+                    <li key = {skill}>{skill}</li>
+                ))
+            }
           </ul>
         </div>
 
         <div className="interest">
-           <ul>
-        { props.interests.map(interest =>(
-            <li key = {interest} >{interest}</li>
-        ))}
+          <ul>
+           {interests.map( interest =>(
+            <li>{interest}</li>
+           ))}
           </ul>
         </div>
 
